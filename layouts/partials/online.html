@@ -25,7 +25,7 @@
 					"name": "{{ replace $translation.register.dates.heading "%state_name%" .Params.state_name }}",
 					"acceptedAnswer": {
 						"@type": "Answer",  
-						"text": "{{ replace $translation.register.dates.byonline_deadline "%online_deadline%" .Params.online_deadline }}<br><br>{{ replace $translation.register.dates.bymail_deadline "%mail_deadline%" .Params.mail_deadline }}<br><br>{{ replace $translation.register.dates.inperson_deadline "%ip_deadline%" .Params.ip_deadline }}"  
+						"text": "{{ $translation.register.dates.byonline_deadline }}{{.Params.online_deadline}}<br><br>{{ $translation.register.dates.bymail_deadline }}{{.Params.mail_deadline}}<br><br>{{ $translation.register.dates.inperson_deadline }}{{.Params.ip_deadline}}"  
 					}
 				},{
 					"@type": "Question",
